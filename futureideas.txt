@@ -1,0 +1,69 @@
+C Legacy
+    Datatypes as defined in stddef.h
+    printf function (maybe also fmt::printf)
+    Bit manipulation
+        Bit printing example
+    Macros
+        Checking for line reading success
+    memory allocation
+        malloc vs calloc vs aligned_alloc vs realloc
+Namespaces
+    Basic examples: Two functions in different namespaces
+Memory management
+    New operator with different arguments
+RAII
+    Basic examples 
+        Memory management 
+        lock guard
+Smart pointers, shared pointers
+Special methods of a class (special constructors etc.)
+    Initializer list
+    Constructor defaulting
+    Assignment operator
+    Move constructor
+    Copy constructor
+    Copy and Swap idiom (i.e. Rvalue reference constructor)
+    Overloading operators
+        Shift operator
+        assignment operator
+        increment operator
+Inheritance
+    Basic examples
+    Components method
+    Virtual methods
+    Dynamic polymorphism
+Type traits
+    std::is_integral
+    self-defined traits
+Templates
+    basic examples (functions and classes)
+    template templates
+    template specification (using type traits and using concepts)
+        Copy function example, cast function example
+    True and False specification
+Iterators
+    Basic example
+        Parsing an array using the pointer
+    Iterator of std::vector
+    Iterators in self-defined data vector
+Constexpr functions
+Command line arguments
+    Basic example
+    More advanced argument parser
+Mutex and condition variables
+    Job Queue example
+    Aggregation/reduction example
+Futures
+    Simple examples
+Parallelization
+    Pthread interface
+        Basic examples over states of threads
+        Thread pools
+    OpenMP
+    MPI
+Exception handling
+Numerics
+    Matrix organization
+    GEMV (fused)
+    GEMM (simple cache optimization)
+
