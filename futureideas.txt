@@ -41,6 +41,8 @@ Templates
     template specification (using type traits and using concepts)
         Copy function example, cast function example
     True and False specification
+Lambda expression
+    capture by ref vs. capture by copy
 Iterators
     Basic example
         Parsing an array using the pointer
