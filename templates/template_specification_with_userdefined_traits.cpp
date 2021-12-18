@@ -54,30 +54,6 @@
 // define 'Require' keyword
 template <typename T, typename... Args>
 using Require = typename std::common_type<T, Args...>::type;
-
-// some more functionalities to compare types,
-// will not be used in this example but might come
-// in handy in other cases
-template <typename T>
-struct make_ElementType
-{
-};
-
-template <template<typename> class X, typename T>
-struct make_ElementType<X<T>>
-{
-    using type = T;
-};
-
-template <typename T>
-using ElementType
-    = typename make_ElementType<typename std::remove_reference<T>::type>::type;
-
-template <typename TX, typename TY>
-using SameElementType
-    =  typename std::conditional<
-                std::is_same<ElementType<TX>, ElementType<TY>>::value,
-                bool, void>::type;
    
 // following types define the keywords "is_Type", "is_A", and "is_B";
 // these have to be included into particular classes in order
